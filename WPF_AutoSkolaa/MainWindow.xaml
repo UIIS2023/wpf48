@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF_AutoSkolaa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_AutoSkolaa"
+        mc:Ignorable="d"
+           Title="AutoSkola" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center"  Margin="0,217,0,0" VerticalAlignment="Top" 
+          Height="auto" IsReadOnly="True" AlternatingRowBackground="Aqua" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="auto" Orientation="Horizontal" Grid.Column="1" Margin="67,-2,0,0">
+            <Button x:Name="btnCas" Content="Cas" HorizontalAlignment="Left" Width="90"  Margin="0,0,0,0.4" Click="btnCas_Click"/>
+            <Button x:Name="btnInstruktor" Content="Instruktor" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="30" Width="75" Click="btnInstruktor_Click" />
+            <Button x:Name="btnIspit" Content="Ispit" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="30" Width="75" Click="btnIspit_Click" />
+            <Button x:Name="btnKandidat" Content="Kandidat" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="30" Width="75" Click="btnKandidat_Click" />
+            <Button x:Name="btnObuka" Content="Obuka" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="30" Width="75" Click="btnObuka_Click" />
+            <Button x:Name="btnPrisustvo" Content="Prisustvo" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="30" Width="75" Click="btnPrisustvo_Click" />
+            <Button x:Name="btnUplata" Content="Uplata" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="75" Click="btnUplata_Click" />
+            <Button x:Name="btnVozilo" Content="Vozilo" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="75" Click="btnVozilo_Click" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="30"  VerticalAlignment="Bottom" Width="auto" Orientation="Horizontal" Grid.Column="1" Margin="193,0,0,0">
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="120" Click="btnDodaj_Click" />
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="120" Click="btnIzmeni_Click"/>
+            <Button x:Name="btnObrisi" Content="Obrisi" Width="120" Click="btnObrisi_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

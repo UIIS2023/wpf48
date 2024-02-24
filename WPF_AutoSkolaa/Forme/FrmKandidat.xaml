@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPF_AutoSkolaa.Forme.FrmKandidat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_AutoSkolaa.Forme"
+        mc:Ignorable="d"
+            Title="Dodaj/Izmeni kanidata" Height="429" Width="267">
+    <Grid Margin="0,0,27,21">
+        <Label Content="Ime:" HorizontalAlignment="Left" Margin="40,38,0,0" VerticalAlignment="Top"/>
+        <TextBox Name ="txtIme" HorizontalAlignment="Left" Height="23" Margin="112,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Prezime:" HorizontalAlignment="Left" Margin="40,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="JMBG:" HorizontalAlignment="Left" Margin="40,121,0,0" VerticalAlignment="Top"/>
+        <TextBox Name ="txtPrezime"  HorizontalAlignment="Left" Height="23" Margin="112,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name ="txtJMBG" HorizontalAlignment="Left" Height="23" Margin="112,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnSacuvaj"  Content="Sacuvaj" HorizontalAlignment="Left" Margin="30,366,0,0" VerticalAlignment="Top" Width="75" Click="btnSacuvaj_Click" />
+        <Button Name="btnOtkazi"  Content="Otkazi" HorizontalAlignment="Left" Margin="158,366,0,0" VerticalAlignment="Top" Width="74" Click="btnOtkazi_Click" />
+        <Label Content="Adresa:" HorizontalAlignment="Left" Margin="40,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,2.405"/>
+        <Label Content="Grad:" HorizontalAlignment="Left" Margin="40,215,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,2.405"/>
+        <Label HorizontalAlignment="Left" Margin="48,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,2.405">
+            <Label Content="Kontakt:" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.421,2.405" Height="304825" Width="69">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+        </Label>
+        <TextBox x:Name ="txtAdresa" HorizontalAlignment="Left" Height="23" Margin="112,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name ="txtGrad" HorizontalAlignment="Left" Height="23" Margin="112,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name ="txtKontakt" HorizontalAlignment="Left" Height="23" Margin="112,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label HorizontalAlignment="Left" Margin="33,289,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,2.405"/>
+        <Label Content="Kontakt:" HorizontalAlignment="Left" Margin="31,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,2.405"/>
+        <Label Content="Datum rodjenja:" HorizontalAlignment="Left" Margin="12,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,2.405"/>
+        <DatePicker x:Name="dpDatum" HorizontalAlignment="Left" Margin="121,302,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
